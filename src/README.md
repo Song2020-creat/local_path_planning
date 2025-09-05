@@ -1,5 +1,6 @@
 ==============================说明(2025.09.05 WS)==============================
 ROS包功能： AirSim仿真环境中二维平面避障
+路径规划方法：Astar RRT
 src目录下功能包：
 1. airsim_bringup: 同时启动多个节点 命令：roslaunch airsim_bringup all.launch
 2. common_config: 参数配置文件
