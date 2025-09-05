@@ -1,0 +1,31 @@
+<launch>
+    <include file="$(find common_config)/launch/load_all_params.launch" />
+    <arg name="udp_flag" default="False" />
+    <arg name="rviz_flag" default="False" />
+    <group if="$(arg udp_flag)">
+        <node   pkg="pkg_netproxy"
+                type="node_recv_telemetry.py"
+                name="node_drone_status_publish"
+                output="screen" />
+        <node   pkg="pkg_netproxy"
+                type="node_sendLocalpath.py"
+                name="node_sendLocalpath"
+                output="screen" />
+    </group>
+    <group unless="$(arg udp_flag)">
+        <node   pkg="pkg_netproxy"
+                type="node_recv_telemetry_unix.py"
+                name="node_drone_status_publish"
+                output="screen" />
+        <node   pkg="pkg_netproxy"
+                type="node_sendLocalpath_unix.py"
+                name="node_sendLocalpath"
+                output="screen" />
+    </group>
+    <group if="$(arg rviz_flag)">
+        <node   pkg="pkg_netproxy"
+                type="node_auto_rviz.py"
+                name="node_auto_rviz"
+                output="screen" />
+    </group>
+</launch>

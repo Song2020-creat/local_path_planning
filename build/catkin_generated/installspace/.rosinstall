@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/nvidia/airsim_ros_Astar_RRT/install/setup.sh

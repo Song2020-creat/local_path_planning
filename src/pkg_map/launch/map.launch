@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find common_config)/launch/load_all_params.launch" />
+    <node   pkg="pkg_map"
+            type="node_grid_map_builder.py"
+            name="node_grid_map_builder"
+            output="screen" />
+</launch>

@@ -1,0 +1,25 @@
+net_setting:
+  #ROS监听终点信息的地址
+  local_ip: "0.0.0.0"
+   #ROS监听终点信息的端口
+  local_port: 9998
+  #ROS监听姿态信息的地址（未使用）
+  tele_ip: "0.0.0.0"
+  #ROS监听姿态信息的端口（未使用）
+  tele_port: 9997
+  #ROS发布局部路径信息的地址
+  target_ip: "0.0.0.0"
+  #ROS发布局部路径信息的端口
+  target_port: 9999
+  #接收airsim点云数据的IP和无人机名字
+  airsim_ip: "192.168.11.110"
+  uav_name: "UAV210"
+  #传输局部路径的sock
+  local_path: "/tmp/local_path.sock"
+  #传输位姿信息的sock(暂时未使用）
+  attitude_path: "/tmp/drone_attitude.sock"
+  #传输终点信息的sock
+  target_path: "/tmp/target_position.sock"
+  #消息协议 1：json 4：自定义消息格式
+  proto_type: 4
+

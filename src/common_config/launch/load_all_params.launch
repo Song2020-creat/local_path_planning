@@ -1,0 +1,4 @@
+<launch>
+    <rosparam file="$(find common_config)/config/net_config.yaml" command="load" />
+    <rosparam file="$(find common_config)/config/map_config.yaml" command="load" />
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/nvidia/airsim_ros_Astar_RRT/devel
+
+Name: common_config
+Description: Description of common_config
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

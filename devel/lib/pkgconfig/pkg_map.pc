@@ -1,0 +1,8 @@
+prefix=/home/nvidia/airsim_ros_Astar_RRT/devel
+
+Name: pkg_map
+Description: Description of pkg_map
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: nav_msgs rospy sensor_msgs pkg_netproxy

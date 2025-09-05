@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find pkg_netproxy)/launch/telemetry.launch"/>
+    <include file="$(find pkg_airsim_lidar_cloud)/launch/cloud.launch"/>
+<!--     <include file="$(find pkg_map)/launch/map.launch"/> -->
+<!--     <include file="$(find pkg_path_plan)/launch/path.launch"/> -->
+
+</launch>

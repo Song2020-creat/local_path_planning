@@ -1,0 +1,17 @@
+map_setting:
+  # 构图范围 m
+  lidar_range: 35.0
+  # 避障最小距离（开始走局部路径）
+  barrier_dis: 20.0
+  # 安全距离
+  dilate: 7
+  #判断障碍存在的最少点数
+  minimum_cloud: 5
+  #地图分辨率
+  cell_size: 1.0
+  #是否显示构图
+  image_show : 0
+  #规划频率
+  rate: 30
+  #规划方法选择 1：Astar  2:RRT Smart 注意同步修改pkg_path_plan中的launch文件！！！！！！
+  method: 2

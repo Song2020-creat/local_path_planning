@@ -1,0 +1,16 @@
+<launch>
+    <include file="$(find common_config)/launch/load_all_params.launch" />
+    <arg name="method_flag" default="False" />
+    <group if="$(arg method_flag)">
+        <node   pkg="pkg_path_plan"
+                type="node_Astar_path_plan.py"
+                name="node_Astar_path_plan"
+                output="screen" />
+    </group>
+    <group unless="$(arg method_flag)">
+        <node   pkg="pkg_path_plan"
+                type="node_rrt_path_plan_occupancy_grid.py"
+                name="node_rrt_path_plan"
+                output="screen" />
+    </group>
+</launch>

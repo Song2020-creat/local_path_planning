@@ -1,0 +1,2 @@
+airsim_bringup:common_config:pkg_airsim_lidar_cloud:pkg_map:pkg_netproxy:pkg_nra15_cloud:pkg_path_plan
+-DCATKIN_DEVEL_PREFIX=/home/nvidia/airsim_ros_Astar_RRT/devel -DCMAKE_INSTALL_PREFIX=/home/nvidia/airsim_ros_Astar_RRT/install -G Unix Makefiles

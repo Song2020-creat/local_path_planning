@@ -1,0 +1,8 @@
+prefix=/home/nvidia/airsim_ros_Astar_RRT/install
+
+Name: pkg_nra15_cloud
+Description: Description of pkg_nra15_cloud
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

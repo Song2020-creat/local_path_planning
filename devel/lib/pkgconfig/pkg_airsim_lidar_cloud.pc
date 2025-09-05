@@ -1,0 +1,8 @@
+prefix=/home/nvidia/airsim_ros_Astar_RRT/devel
+
+Name: pkg_airsim_lidar_cloud
+Description: Description of pkg_airsim_lidar_cloud
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy sensor_msgs std_msgs pkg_netproxy message_filters

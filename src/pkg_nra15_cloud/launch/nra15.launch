@@ -1,0 +1,6 @@
+<launch>
+    <node   pkg="pkg_nra15_cloud"
+            type="node_radar_NRA15.py"
+            name="node_NRA15_range"
+            output="screen" />
+</launch>

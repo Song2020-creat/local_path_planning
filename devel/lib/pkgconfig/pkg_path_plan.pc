@@ -1,0 +1,8 @@
+prefix=/home/nvidia/airsim_ros_Astar_RRT/devel
+
+Name: pkg_path_plan
+Description: Description of pkg_path_plan
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: std_msgs geometry_msgs nav_msgs rospy pkg_netproxy message_filters sensor_msgs
